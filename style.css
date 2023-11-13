@@ -5,10 +5,10 @@
 }
 body{
   background-color: white;
-  background-image: url(images/ISLAMIC\ VACATION\ COURSE.svg), url(images/Vector.svg), url(images/steptodown.svg), url(images/background\ logo\ 1.svg);
+  background-image: url(images/ISLAMIC\ VACATION\ COURSE.svg), url(images/Vector.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center, top, bottom, 0%;
+  background-position: top;
   font-family: sans-serif;
 } 
 main {
@@ -73,15 +73,15 @@ header .mid-header .existing {
 .section .main-section p span {
   color: hsla(146, 100%, 28%, 1);
 }
-.section ,.main-section .support{
+.section .main-section .support{
   display: flex;
   flex-direction: row;
 }
 .section .main-section .donation {
   background-color: hsla(146, 100%, 28%, 1);
   color: white;
-  font-size: 14px;
-  padding: 10px;
+  font-size: 16px;
+  padding: 10px 20px;
   border-radius: 100px;
   border-top: 0px;
   border-right: 0px;
@@ -93,7 +93,7 @@ header .mid-header .existing {
 .section .main-section .pin {
   background-color: hsla(0 0% 100%);
   color: hsla(146, 100%, 28%, 1);
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 100px;
   border-top: 0px;
   border-right: 0px;
@@ -101,122 +101,16 @@ header .mid-header .existing {
   border-left: solid 4px hsla(146, 100%, 28%, 1);
   cursor: pointer;
   margin-left: 15px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
+  text-decoration: none;
+  text-align: center;
 }
 .section .section-aside {
   margin-top: 14%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.section .section-aside .price {
-  color: white;
-  font-size: 22px;
-  font-weight: 600;
-}
-.section .section-aside .early {
-  background-color: hsla(67, 99%, 43%, 1);
-  color: hsla(0, 0%, 0%, 1);
-  font-size: 16px;
-  font-weight: 500;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding: 10px;
-  width: 55%;
-  margin-left: 30%;
-}
-.section-aside .payment {
-  background-color: green;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  font-weight: 400;
-  font-size: 22px;
-  width: 70%;
-  margin-left: 30%;
-}
-.section .section-aside .camp {
-  display: flex;
-  justify-content: space-between;
-}
-.section-aside .late {
-  background-color: hsla(67, 99%, 43%, 1);
-  color: hsla(0, 0%, 0%, 1);
-  font-size: 16px;
-  font-weight: 500;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding: 10px;
-  margin-top: 10px;
-  width: 100%;
-}
-.section-aside .late span {
-  font-size: 16px;
-  font-weight: 700;
-}
-.section-aside .so {
-  display: flex;
-  justify-content: space-between;
-}
-.section-aside .date {
-  background-color: green;
-  color: white;
-  width: 15%;
-  margin-top: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding: 5px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-}
-.section-aside .section-footer {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-.section-aside .section-footer .venue{
-  width: 100%;
-}
-.section-aside .section-footer .venue p {
-  background-color: green;
-  color: white;
-  padding: 10px;
-  font-size: 24px;
-  font-weight: 600;
-  border-radius: 5px;
-}
-.section-aside .section-footer .venue span {
-  font-size: 24px;
-  font-weight: 400;
-}
-.section-aside .section-footer .period {
-  background-color: hsla(67, 99%, 43%, 1);
-  border-radius: 5px;
-  text-align: center;
-  padding: 15px 15px 15px 0px;
-  width: 70%;
-}
-.section-aside .section-footer h1 {
-  color: hsla(158, 73%, 19%, 1);
-  font-size: 50px;
-  font-weight: 600;
-}
-.section-aside .section-footer .period .day {
-  display: flex;
-  justify-content: center;
-  gap: 70px;
-}
-.section-aside .section-footer .day p {
-  color: hsla(0, 0%, 20%, 1);
-  font-size: 21px;
-  font-weight: 400;
-}
-.period .dec {
-  color: hsla(0, 0%, 20%, 1);
-  font-size: 21px;
-  font-weight: 600;
 }
 /*Extra small devices (phone 470px and down)*/
 @media screen and (max-width: 470px) {
@@ -245,11 +139,6 @@ header .mid-header .existing {
     font-weight: 400;
     padding: 1px 2px;
   }
-  .section-aside .section-footer .period .day{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
   .section{
     display: flex;
     flex-direction: column;
@@ -261,58 +150,15 @@ header .mid-header .existing {
   .section .main-section p{
     font-size: 14px;
   }
+  .section .main-section .support{
+    display: flex;
+    flex-direction: column;
+  }
   .section .main-section .donation{
-    font-size: 10px;
+    font-size: 16px;
   }
   .section .main-section .pin{
-    font-size: 10px;
-  }
-  .section .section-aside .early{
-    font-size: 11px;
-    font-weight: 500;
-  }
-  .section .section-aside .late{
-    font-size: 11px;
-    font-weight: 500;
-  }
-  .section .section-aside .late span{
-    color: hsla(0, 0%, 0%, 1);
-    font-size: 11px;
-    font-weight: 700;
-  }
-  .section .section-aside .payment{
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .section .section-aside .payment .price{
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .so .date {
-    width: 20%;
-    font-size: 15px;
-  }
-  .section-aside .section-footer .venue{
-    width: 50%;
-  }
-  .section-aside .section-footer .period{
-    width: 50%;
-  }
-  .section-aside .section-footer .venue p{
-    font-size: 12px;
-  }
-  .section-aside .section-footer .venue p span{
-    font-size: 12px;
-  }
-  .section-aside .section-footer .period .day p{
-    font-size: 12px;
-  }
-  .section-aside .section-footer .period h1{
-    font-size: 20px;
-  }
-  .section-aside .section-footer .period .dec{
-    color: hsla(0, 0%, 20%, 1);
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 /*Small devices (phone 599px-470px)*/
@@ -349,6 +195,17 @@ header .mid-header .existing {
     display: flex;
     flex-direction: column;
   }
+  .section .main-section .support {
+    display: flex;
+    flex-direction: column;
+  }
+  .section .main-section .donation {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .section .main-section .pin {
+    font-size: 16px;
+  }
 }
 /*Extra small devices (phone 600px-895px)*/
 @media screen and (max-width: 895px) {
@@ -364,4 +221,50 @@ header .mid-header .existing {
     display: flex;
     flex-direction: column;
   }
+}
+.IVC{
+  width: 50%;
+}
+.IVC h2{
+  background-color: hsla(67, 100%, 59%, 1);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  margin-left: 20px;
+}
+.IVC span{
+  font: 18px;
+  font-weight: 600;
+}
+.IVC p{
+  width: 100%;
+  margin-left: 20px;
+}
+.section-center {
+  width: 100%;
+}
+.section-center a {
+  background-color: hsla(146, 100%, 28%, 1);
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border-bottom: solid 4px hsla(67, 99%, 43%, 1);
+  border-left: solid 4px hsla(67, 99%, 43%, 1);
+  text-decoration: none;
+}
+footer{
+  background-color: hsla(158, 73%, 19%, 1);
+}
+footer a{
+  color: hsla(0, 0%, 100%, 1);
+  text-decoration: none;
+  font-weight: 400;
+}
+footer a:hover{
+  color: hsla(67, 100%, 59%, 1);
+}
+footer .social-icons{
+  margin-left: 10px;
 }
