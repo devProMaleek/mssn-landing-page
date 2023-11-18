@@ -135,10 +135,12 @@ export default function HomePage() {
                     >
                       <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border md:items-center border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-12 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                          <div className="text-xl md:text-2xl text-success-800 font-bold leading-8 tracking-normal">
-                            <span className="">New User?</span>
-                            <span className="ml-2 underline">Register</span>
-                          </div>
+                          <Link href="#">
+                            <div className="text-xl md:text-2xl text-success-800 font-bold leading-8 tracking-normal">
+                              <span className="">New User?</span>
+                              <span className="ml-2 underline">Register</span>
+                            </div>
+                          </Link>
                         </li>
                         <li>
                           <button
