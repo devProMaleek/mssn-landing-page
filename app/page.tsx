@@ -66,7 +66,7 @@ export default function HomePage() {
         <header className="mb-10">
           <div className="">
             <div className="bg-none md:bg-[url('./images/navbar-background.svg')] md:h-52 -z-50 bg-no-repeat bg-[50%_100%] bg-origin-border bg-clip-border">
-              <nav className="">
+              <nav className="fixed shadow-md bg-white w-full z-50 top-0 start-0 border-b border-gray-200">
                 <div className="px-4 lg:px-6 dark:bg-gray-800">
                   <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <div className="">
@@ -159,8 +159,8 @@ export default function HomePage() {
             </div>
 
             <section className="bg-[url('./images/hero-section-background.png')] h-screen bg-no-repeat bg-bottom md:bg-[50%_100%] bg-auto bg-clip-content">
-              <div className="gap-8 items-center px-4 pt-28 md:pt-0 mx-auto max-w-screen-2xl mb-4 md:grid md:grid-cols-2 lg:px-6">
-                <div className="mt-4 md:mt-0">
+              <div className="gap-8 items-center px-4 pt-32 md:pt-0 mx-auto max-w-screen-2xl mb-4 md:grid md:grid-cols-2 lg:px-6">
+                <div className="mt-8 md:mt-0">
                   <div className="relative hidden md:block">
                     <Image
                       src={Arabic}
@@ -532,7 +532,7 @@ export default function HomePage() {
                         Phase 1:
                       </p>
                     </div>
-                    <div className="absolute w-[345px] h-[345px] bg-[#C1DC01] rounded-[20px] z-50 px-8 py-10">
+                    <div className="absolute w-full md:w-[345px] h-[345px] bg-[#C1DC01] rounded-[20px] z-40 px-8 py-10">
                       <div className="">
                         <div className="flex items-center space-x-8">
                           <div className="flex flex-col space-y-2 md:space-y-4">
@@ -613,7 +613,7 @@ export default function HomePage() {
                         Phase 2:
                       </p>
                     </div>
-                    <div className="absolute w-[345px] h-[345px] bg-[#00913E] rounded-[20px] z-50 px-8 py-10">
+                    <div className="absolute w-full md:w-[345px] h-[345px] bg-[#00913E] rounded-[20px] z-40 px-8 py-10">
                       <div className="">
                         <div className="flex items-center space-x-6 md:space-x-8">
                           <div className="flex flex-col space-y-2 md:space-y-4">
