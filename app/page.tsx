@@ -66,9 +66,9 @@ export default function HomePage() {
         <header className="mb-10">
           <div className="">
             <div className="bg-none md:bg-[url('./images/navbar-background.svg')] md:h-52 -z-50 bg-no-repeat bg-[50%_100%] bg-origin-border bg-clip-border">
-              <nav className="fixed shadow-md bg-white w-full z-50 top-0 start-0 border-b border-gray-200">
+              <nav className="fixed top-0 z-50 w-full bg-white border-b border-gray-200 shadow-md start-0">
                 <div className="px-4 lg:px-6 dark:bg-gray-800">
-                  <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
+                  <div className="flex flex-wrap items-center justify-between p-4 mx-auto max-w-screen-2xl">
                     <div className="">
                       <Link href="/">
                         <div className="flex items-center space-x-2">
@@ -98,7 +98,7 @@ export default function HomePage() {
                       </Link>
                     </div>
                     <div className="flex items-center space-x-4">
-                      <div className="text-xs block sm:hidden md:text-2xl text-success-800 font-bold leading-8 tracking-normal">
+                      <div className="block text-xs font-bold leading-8 tracking-normal sm:hidden md:text-2xl text-success-800">
                         <span className="">New User?</span>
                         <span className="ml-2 underline">Register</span>
                       </div>
@@ -106,7 +106,7 @@ export default function HomePage() {
                         <button
                           data-collapse-toggle="navbar-default"
                           type="button"
-                          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                          className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                           aria-controls="navbar-default"
                           aria-expanded="false"
                         >
@@ -133,10 +133,10 @@ export default function HomePage() {
                       className="hidden w-full md:block md:w-auto"
                       id="navbar-default"
                     >
-                      <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border md:items-center border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-12 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                      <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 md:items-center bg-gray-50 md:flex-row md:space-x-12 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
                           <Link href="https://camp.mssnlagos.net">
-                            <div className="text-xl md:text-2xl text-success-800 font-bold leading-8 tracking-normal">
+                            <div className="text-xl font-bold leading-8 tracking-normal md:text-2xl text-success-800">
                               <span className="">New User?</span>
                               <span className="ml-2 underline">Register</span>
                             </div>
@@ -144,12 +144,12 @@ export default function HomePage() {
                         </li>
                         <li>
                           <Link href="https://camp.mssnlagos.net/existingmember">
-                          <button
-                            type="button"
-                            className="text-white bg-primary hover:bg-success-700 cursor-pointer focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-xl md:text-2xl px-8 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-                          >
-                            Existing Users
-                          </button>
+                            <button
+                              type="button"
+                              className="px-8 py-2 text-xl font-medium text-center text-white rounded-full cursor-pointer bg-primary hover:bg-success-700 focus:outline-none focus:ring-4 focus:ring-green-300 md:text-2xl dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                            >
+                              Existing Users
+                            </button>
                           </Link>
                         </li>
                       </ul>
@@ -163,7 +163,7 @@ export default function HomePage() {
             </div>
 
             <section className="bg-[url('./images/hero-section-background.png')] h-screen bg-no-repeat bg-bottom md:bg-[50%_100%] bg-auto bg-clip-content">
-              <div className="gap-8 items-center px-4 pt-32 md:pt-0 mx-auto max-w-screen-2xl mb-4 md:grid md:grid-cols-2 lg:px-6">
+              <div className="items-center gap-8 px-4 pt-32 mx-auto mb-4 md:pt-0 max-w-screen-2xl md:grid md:grid-cols-2 lg:px-6">
                 <div className="mt-8 md:mt-0">
                   <div className="relative hidden md:block">
                     <Image
@@ -185,14 +185,14 @@ export default function HomePage() {
                   </div>
                   <div className="">
                     <div className="my-8">
-                      <p className="text-slate-400 text-2xl md:text-3xl leading-8 md:leading-10 font-normal tracking-wider md:tracking-normal">
+                      <p className="text-2xl font-normal leading-8 tracking-wider text-slate-400 md:text-3xl md:leading-10 md:tracking-normal">
                         It’s going to be yet another soul-inspiring{" "}
                         <span className="text-primary">&</span> informative
                         journey.
                       </p>
                     </div>
                     <div className="">
-                      <div className="flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 md:space-x-6">
+                      <div className="flex flex-col space-y-6 md:flex-row md:items-center md:space-y-0 md:space-x-6">
                         <div className="">
                           <button
                             type="button"
@@ -217,28 +217,28 @@ export default function HomePage() {
                   <Image src={HeroImage} alt="Hero Image" />
                 </div>
               </div>
-              <div className="px-4 mx-auto max-w-screen-2xl lg:px-6 mt-10 md:mt-28">
+              <div className="px-4 mx-auto mt-10 max-w-screen-2xl lg:px-6 md:mt-28">
                 <div className="bg-[#f1f1f1] h-44 rounded-lg flex items-center justify-center">
-                  <div className="flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 md:justify-between w-4/5 mx-auto">
+                  <div className="flex flex-col w-4/5 mx-auto space-y-6 md:flex-row md:items-center md:space-y-0 md:justify-between">
                     <div className="">
-                      <p className="text-xl md:text-3xl text-center md:text-left font-extrabold text-success-800 leading-normal tracking-normal">
+                      <p className="text-xl font-extrabold leading-normal tracking-normal text-center md:text-3xl md:text-left text-success-800">
                         COUNTDOWN <span className="font-normal">TO</span> 113th
                         IVC
                       </p>
                     </div>
                     <div className="flex items-center space-x-1 md:space-x-2">
                       <div className="">
-                        <div className="relative w-16 h-14 md:h-24 md:w-28 bg-success-500 rounded-md flex justify-center items-center">
+                        <div className="relative flex items-center justify-center w-16 rounded-md h-14 md:h-24 md:w-28 bg-success-500">
                           <Image
                             src={Divider}
                             alt="Benchmark Svg"
                             className="absolute"
                           />
-                          <p className="text-white font-shareTech text-2xl md:text-8xl">
+                          <p className="text-2xl text-white font-shareTech md:text-8xl">
                             {countdown.days}
                           </p>
                         </div>
-                        <p className="font-shareTech uppercase font-normal leading-normal tracking-normal text-center text-black text-sm md:text-lg">
+                        <p className="text-sm font-normal leading-normal tracking-normal text-center text-black uppercase font-shareTech md:text-lg">
                           Days
                         </p>
                       </div>
@@ -250,17 +250,17 @@ export default function HomePage() {
                         />
                       </div>
                       <div className="">
-                        <div className="relative w-16 h-14 md:h-24 md:w-28 bg-success-500 rounded-md flex justify-center items-center">
+                        <div className="relative flex items-center justify-center w-16 rounded-md h-14 md:h-24 md:w-28 bg-success-500">
                           <Image
                             src={Divider}
                             alt="Benchmark Svg"
                             className="absolute "
                           />
-                          <p className="text-white font-shareTech text-2xl md:text-8xl">
+                          <p className="text-2xl text-white font-shareTech md:text-8xl">
                             {countdown.hours}
                           </p>
                         </div>
-                        <p className="font-shareTech uppercase font-normal leading-normal tracking-normal text-center text-black text-sm md:text-lg">
+                        <p className="text-sm font-normal leading-normal tracking-normal text-center text-black uppercase font-shareTech md:text-lg">
                           Hours
                         </p>
                       </div>
@@ -268,21 +268,21 @@ export default function HomePage() {
                         <Image
                           src={Delimiter}
                           alt="Delimiter Svg"
-                          className="md:-mt-6 w-4 h-8"
+                          className="w-4 h-8 md:-mt-6"
                         />
                       </div>
                       <div className="">
-                        <div className="relative w-16 h-14 md:h-24 md:w-28 bg-success-500 rounded-md flex justify-center items-center">
+                        <div className="relative flex items-center justify-center w-16 rounded-md h-14 md:h-24 md:w-28 bg-success-500">
                           <Image
                             src={Divider}
                             alt="Benchmark Svg"
                             className="absolute "
                           />
-                          <p className="text-white font-shareTech text-2xl md:text-8xl">
+                          <p className="text-2xl text-white font-shareTech md:text-8xl">
                             {countdown.minutes}
                           </p>
                         </div>
-                        <p className="font-shareTech uppercase font-normal leading-normal tracking-normal text-center text-black text-sm md:text-lg">
+                        <p className="text-sm font-normal leading-normal tracking-normal text-center text-black uppercase font-shareTech md:text-lg">
                           Minutes
                         </p>
                       </div>
@@ -294,17 +294,17 @@ export default function HomePage() {
                         />
                       </div>
                       <div className="">
-                        <div className="relative w-16 h-14 md:h-24 md:w-28 bg-success-500 rounded-md flex justify-center items-center">
+                        <div className="relative flex items-center justify-center w-16 rounded-md h-14 md:h-24 md:w-28 bg-success-500">
                           <Image
                             src={Divider}
                             alt="Benchmark Svg"
                             className="absolute "
                           />
-                          <p className="text-white font-shareTech text-2xl md:text-8xl">
+                          <p className="text-2xl text-white font-shareTech md:text-8xl">
                             {countdown.seconds}
                           </p>
                         </div>
-                        <p className="font-shareTech uppercase font-normal leading-normal tracking-normal text-center text-black text-sm md:text-lg">
+                        <p className="text-sm font-normal leading-normal tracking-normal text-center text-black uppercase font-shareTech md:text-lg">
                           Seconds
                         </p>
                       </div>
@@ -315,12 +315,12 @@ export default function HomePage() {
               <div className="max-h-content bg-white md:bg-transparent md:bg-gradient-to-b mb-10 md:from-transparent md:from-2% md:to-white md:to-10%">
                 <div className="px-4 mx-auto max-w-screen-2xl lg:px-6">
                   <div className="md:w-[55%] w-full mx-auto pt-20">
-                    <div className="grid grid-cols-2 items-center">
+                    <div className="grid items-center grid-cols-2">
                       <div className="">
                         <Image
                           src={BigLogo}
                           sizes="100vw"
-                          className="w-28 h-24 md:w-72 md:h-60"
+                          className="h-24 w-28 md:w-72 md:h-60"
                           alt="Logo svg"
                         />
                       </div>
@@ -332,10 +332,14 @@ export default function HomePage() {
                           </div>
                         </div>
                         <div className="mt-3">
-                          <p className="text-base md:text-xl font-normal leading-6 md:leading-8 tracking-normal">
-                            MSSNLagos State Area Unit presents her annual Islamic Vacation Course (IVC) for youths.
-                            The 113th edition event holds this
-                            <span className="font-extrabold text-success-700 dark:text-white"> December at EPE, Naforija. </span>
+                          <p className="text-base font-normal leading-6 tracking-normal md:text-xl md:leading-8">
+                            MSSNLagos State Area Unit presents her annual
+                            Islamic Vacation Course (IVC) for youths. The 113th
+                            edition event holds this
+                            <span className="font-extrabold text-success-700 dark:text-white">
+                              {" "}
+                              December at EPE, Naforija.{" "}
+                            </span>
                           </p>
                         </div>
                       </div>
@@ -347,17 +351,17 @@ export default function HomePage() {
           </div>
         </header>
 
-        <section className="bg-white dark:bg-gray-900 mt-28 pt-16">
-          <div className="pt-24 pb-16 px-4 mx-auto max-w-screen-2xl sm:pt-32 sm:pb-24 lg:px-6">
+        <section className="pt-16 bg-white dark:bg-gray-900 mt-28">
+          <div className="px-4 pt-24 pb-16 mx-auto max-w-screen-2xl sm:pt-32 sm:pb-24 lg:px-6">
             <div className="max-w-screen-md">
-              <h2 className="md:mb-6 mb-4 md:text-5xl text-3xl max-w-lg md:tracking-wider md:leading-10 font-extrabold text-success-700 dark:text-white mt-10 mt-md-0">
+              <h2 className="max-w-lg mt-10 mb-4 text-3xl font-extrabold md:mb-6 md:text-5xl md:tracking-wider md:leading-10 text-success-700 dark:text-white mt-md-0">
                 Some speakers you would see
               </h2>
             </div>
-            <div className="w-full flex flex-col md:flex-row space-y-6 md:space-y-0 md:justify-between md:items-center">
+            <div className="flex flex-col w-full space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-center">
               <div className="">
-                <p className="max-w-xl md:text-xl md:tracking-normal md:leading-7 font-normal">
-                 Some of our amazing speakers that will be around.
+                <p className="max-w-xl font-normal md:text-xl md:tracking-normal md:leading-7">
+                  Some of our amazing speakers that will be around.
                 </p>
               </div>
               <div className="">
@@ -372,23 +376,23 @@ export default function HomePage() {
 
             <div className="my-6 md:my-10">
               <div className="overflow-auto scrollbar-hide">
-                <div className="flex items-center space-x-8 mr-10">
+                <div className="flex items-center mr-10 space-x-8">
                   <div className="">
                     <div className="relative">
                       <div className="w-56 h-48 md:w-[400px] md:h-[340px] bg-[url('./images/male.png')] rounded-xl bg-center bg-[#C4C4C4]/50 mix-blend-luminosity bg-no-repeat bg-cover"></div>
                       <div className="absolute md:left-6 md:top-6 top-2 left-2 text-center py-2 md:px-8 px-6 bg-[#E5FF2D] rounded-full">
-                        <p className="text-sm leading-4 md:text-base md:leading-6 font-semibold tracking-normal">
+                        <p className="text-sm font-semibold leading-4 tracking-normal md:text-base md:leading-6">
                           USTADH
                         </p>
                       </div>
-                      <div className="md:mt-5 mt-3">
-                        <p className="uppercase md:text-base text-sm leading-4 font-normal md:leading-8 tracking-normal">
+                      <div className="mt-3 md:mt-5">
+                        <p className="text-sm font-normal leading-4 tracking-normal uppercase md:text-base md:leading-8">
                           Speaker
                         </p>
-                        <h4 className="md:text-4xl text-2xl leading-8 font-normal tracking-normal md:mb-2">
+                        <h4 className="text-2xl font-normal leading-8 tracking-normal md:text-4xl md:mb-2">
                           Mallam
                         </h4>
-                        <p className="md:text-lg text-sm font-normal md:leading-8 tracking-wide">
+                        <p className="text-sm font-normal tracking-wide md:text-lg md:leading-8">
                           Mallam
                         </p>
                       </div>
@@ -397,19 +401,19 @@ export default function HomePage() {
                   <div className="">
                     <div className="relative">
                       <div className="w-56 h-48 md:w-[400px] md:h-[340px] bg-[url('./images/female.png')] rounded-xl bg-center bg-[#C4C4C4]/50 mix-blend-luminosity bg-no-repeat bg-cover"></div>
-                      <div className="absolute md:left-6 md:top-6 top-2 left-2 text-center py-2 md:px-8 px-6 bg-success-500 rounded-full">
-                        <p className="text-sm md:text-base md:leading-6 font-semibold md:tracking-normal">
+                      <div className="absolute px-6 py-2 text-center rounded-full md:left-6 md:top-6 top-2 left-2 md:px-8 bg-success-500">
+                        <p className="text-sm font-semibold md:text-base md:leading-6 md:tracking-normal">
                           IMAM
                         </p>
                       </div>
-                      <div className="md:mt-5 mt-3">
-                        <p className="uppercase md:text-base text-sm leading-4 font-normal md:leading-8 tracking-normal">
+                      <div className="mt-3 md:mt-5">
+                        <p className="text-sm font-normal leading-4 tracking-normal uppercase md:text-base md:leading-8">
                           Speaker
                         </p>
-                        <h4 className="md:text-4xl text-2xl leading-8 font-normal tracking-normal md:mb-2">
+                        <h4 className="text-2xl font-normal leading-8 tracking-normal md:text-4xl md:mb-2">
                           Mallam
                         </h4>
-                        <p className="md:text-lg text-sm font-normal md:leading-8 tracking-wide">
+                        <p className="text-sm font-normal tracking-wide md:text-lg md:leading-8">
                           Scholar
                         </p>
                       </div>
@@ -419,18 +423,18 @@ export default function HomePage() {
                     <div className="relative">
                       <div className="w-56 h-48 md:w-[400px] md:h-[340px] bg-[url('./images/Asset-24x.png')] rounded-xl bg-center bg-[#C4C4C4]/50 mix-blend-luminosity bg-no-repeat bg-cover"></div>
                       <div className="absolute md:left-6 md:top-6 top-2 left-2 text-center py-2 md:px-8 px-6 bg-[#E5FF2D] rounded-full">
-                        <p className="text-sm md:text-base md:leading-6 font-semibold md:tracking-normal">
+                        <p className="text-sm font-semibold md:text-base md:leading-6 md:tracking-normal">
                           USTADH
                         </p>
                       </div>
-                      <div className="md:mt-5 mt-3">
-                        <p className="uppercase md:text-base text-sm leading-4 font-normal md:leading-8 tracking-normal">
+                      <div className="mt-3 md:mt-5">
+                        <p className="text-sm font-normal leading-4 tracking-normal uppercase md:text-base md:leading-8">
                           Speaker
                         </p>
-                        <h4 className="md:text-4xl text-2xl leading-8 font-normal tracking-normal md:mb-2">
+                        <h4 className="text-2xl font-normal leading-8 tracking-normal md:text-4xl md:mb-2">
                           Mallam
                         </h4>
-                        <p className="md:text-lg text-sm font-normal md:leading-8 tracking-wide">
+                        <p className="text-sm font-normal tracking-wide md:text-lg md:leading-8">
                           Marital
                         </p>
                       </div>
@@ -439,19 +443,19 @@ export default function HomePage() {
                   <div className="">
                     <div className="relative">
                       <div className="w-56 h-48 md:w-[400px] md:h-[340px] bg-[url('./images/Asset-24x.png')] rounded-xl bg-center bg-[#C4C4C4]/50 mix-blend-luminosity bg-no-repeat bg-cover"></div>
-                      <div className="absolute md:left-6 md:top-6 top-2 left-2 text-center py-2 md:px-8 px-6 bg-success-500 rounded-full">
-                        <p className="text-sm md:text-base md:leading-6 font-semibold md:tracking-normal">
+                      <div className="absolute px-6 py-2 text-center rounded-full md:left-6 md:top-6 top-2 left-2 md:px-8 bg-success-500">
+                        <p className="text-sm font-semibold md:text-base md:leading-6 md:tracking-normal">
                           USTADH
                         </p>
                       </div>
-                      <div className="md:mt-5 mt-3">
-                        <p className="uppercase md:text-base text-sm leading-4 font-normal md:leading-8 tracking-normal">
+                      <div className="mt-3 md:mt-5">
+                        <p className="text-sm font-normal leading-4 tracking-normal uppercase md:text-base md:leading-8">
                           Speaker
                         </p>
-                        <h4 className="md:text-4xl text-2xl leading-8 font-normal tracking-normal md:mb-2">
+                        <h4 className="text-2xl font-normal leading-8 tracking-normal md:text-4xl md:mb-2">
                           Mallam
                         </h4>
-                        <p className="md:text-lg text-sm font-normal md:leading-8 tracking-wide">
+                        <p className="text-sm font-normal tracking-wide md:text-lg md:leading-8">
                           Scholar
                         </p>
                       </div>
@@ -464,7 +468,7 @@ export default function HomePage() {
         </section>
 
         <section className="bg-white dark:bg-gray-900">
-          <div className="gap-8 items-center pt-4 pb-8 px-4 mx-auto max-w-screen-2xl xl:gap-16 md:grid md:grid-cols-2 sm:pt-8 sm:pb-16 lg:px-6">
+          <div className="items-center gap-8 px-4 pt-4 pb-8 mx-auto max-w-screen-2xl xl:gap-16 md:grid md:grid-cols-2 sm:pt-8 sm:pb-16 lg:px-6">
             <div className="">
               <Image src={OrganizerImage} alt="Organizers Image" className="" />
             </div>
@@ -472,7 +476,7 @@ export default function HomePage() {
               <h2 className="mb-4 md:mb-6 text-3xl md:text-5xl max-w-xs md:max-w-sm tracking-wider md:tracking-normal leading-10 md:leading-[48px] font-extrabold text-success-800 dark:text-white">
                 About the organizers
               </h2>
-              <p className="md:max-w-xl mb-6 font-light text-gray-500 md:leading-7 md:text-xl text-base tracking-wider md:tracking-wide dark:text-gray-400">
+              <p className="mb-6 text-base font-light tracking-wider text-gray-500 md:max-w-xl md:leading-7 md:text-xl md:tracking-wide dark:text-gray-400">
                 The society, Muslim Students Society of Nigeria, is the meeting
                 point for all Muslim Students in all Higher Institutions,
                 Secondary Schools in most part (if not all), graduate and Post
@@ -481,11 +485,11 @@ export default function HomePage() {
               </p>
               <Link
                 href="https://mssnlagos.net"
-                className="inline-flex items-center text-success-500 focus:ring-4 leading-5 focus:ring-primary-300 font-bold underline rounded-lg text-sm md:text-base dark:focus:ring-primary-900"
+                className="inline-flex items-center text-sm font-bold leading-5 underline rounded-lg text-success-500 focus:ring-4 focus:ring-primary-300 md:text-base dark:focus:ring-primary-900"
               >
                 Learn more
                 <svg
-                  className="ml-2 -mr-1 w-5 h-5"
+                  className="w-5 h-5 ml-2 -mr-1"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -502,23 +506,23 @@ export default function HomePage() {
         </section>
 
         <section className="bg-white dark:bg-gray-900">
-          <div className="gap-8 items-center py-14 px-4 mx-auto max-w-screen-2xl md:grid md:grid-cols-2 sm:py-32 lg:px-6">
+          <div className="items-center gap-8 px-4 mx-auto py-14 max-w-screen-2xl md:grid md:grid-cols-2 sm:py-32 lg:px-6">
             <div className="self-start">
               <h2 className="mb-4 md:mb-6 text-3xl md:text-5xl w-72 md:max-w-sm tracking-widest md:tracking-normal leading-10 md:leading-[48px] font-extrabold text-success-800 dark:text-white">
                 Camp Schedule
               </h2>
               <div className="max-w-md">
-                <p className="font-light text-gray-500 md:leading-7 md:text-xl text-base tracking-wide dark:text-gray-400">
+                <p className="text-base font-light tracking-wide text-gray-500 md:leading-7 md:text-xl dark:text-gray-400">
                   The Camp will be held in two phases
                 </p>
-                <ul className="list-disc list-outside ml-6 md:ml-8">
-                  <li className="font-light text-gray-500 md:leading-7 md:text-xl text-base tracking-wide dark:text-gray-400">
+                <ul className="ml-6 list-disc list-outside md:ml-8">
+                  <li className="text-base font-light tracking-wide text-gray-500 md:leading-7 md:text-xl dark:text-gray-400">
                     Secondary School
                   </li>
-                  <li className="font-light text-gray-500 md:leading-7 md:text-xl text-base tracking-wide dark:text-gray-400">
+                  <li className="text-base font-light tracking-wide text-gray-500 md:leading-7 md:text-xl dark:text-gray-400">
                     School leavers, Undergraduate, & Others
                   </li>
-                  <li className="font-light text-gray-500 text-start md:leading-7 md:text-xl text-base tracking-wide dark:text-gray-400">
+                  <li className="text-base font-light tracking-wide text-gray-500 text-start md:leading-7 md:text-xl dark:text-gray-400">
                     Both phases will hold at Human Capital Development Center
                     (HCDC), Noforija, Epe, Lagos
                   </li>
@@ -526,11 +530,11 @@ export default function HomePage() {
               </div>
             </div>
             <div className="mt-12 md:mt-8 mb-72 md:mb-0 md:self-start">
-              <div className="flex flex-col md:flex-row space-y-96 md:space-y-0 space-x-0 md:space-x-96">
+              <div className="flex flex-col space-x-0 md:flex-row space-y-96 md:space-y-0 md:space-x-96">
                 <div className="my-8 md:my-0">
                   <div className="relative">
                     <div className="absolute -top-8 w-28 h-20 bg-[#00913E] rounded-lg z-10">
-                      <p className="text-center pt-1 md:pt-2 text-white font-medium md:leading-4 tracking-wide text-base">
+                      <p className="pt-1 text-base font-medium tracking-wide text-center text-white md:pt-2 md:leading-4">
                         Phase 1:
                       </p>
                     </div>
@@ -592,7 +596,7 @@ export default function HomePage() {
                         >
                           Get Ticket
                           <svg
-                            className="ml-2 -mr-1 w-5 h-5"
+                            className="w-5 h-5 ml-2 -mr-1"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
@@ -620,7 +624,7 @@ export default function HomePage() {
                         <div className="flex items-center space-x-6 md:space-x-8">
                           <div className="flex flex-col space-y-2 md:space-y-4">
                             <div className="">
-                              <p className="text-sm text-white font-bold md:leading-4">
+                              <p className="text-sm font-bold text-white md:leading-4">
                                 Undergraduate & Others
                               </p>
                             </div>
@@ -628,7 +632,7 @@ export default function HomePage() {
                               <p className="text-2xl font-bold text-[#C1DC01] md:leading-4 tracking-wide">
                                 22nd - 27th
                               </p>
-                              <span className="text-base font-bold text-white md:leading-4 tracking-wide">
+                              <span className="text-base font-bold tracking-wide text-white md:leading-4">
                                 December, 2023
                               </span>
                             </div>
@@ -636,7 +640,7 @@ export default function HomePage() {
                               <p className="text-2xl font-bold text-[#C1DC01] md:leading-4 tracking-wide">
                                 9th - 14th
                               </p>
-                              <span className="text-base font-bold text-white md:leading-4 tracking-wide">
+                              <span className="text-base font-bold tracking-wide text-white md:leading-4">
                                 Jum’ Thanni, 1445
                               </span>
                             </div>
@@ -673,7 +677,7 @@ export default function HomePage() {
                         >
                           Get Ticket
                           <svg
-                            className="ml-2 -mr-1 w-5 h-5"
+                            className="w-5 h-5 ml-2 -mr-1"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
@@ -695,22 +699,22 @@ export default function HomePage() {
         </section>
 
         <section className="bg-white dark:bg-gray-900">
-          <div className="gap-8 items-center py-14 px-4 mx-auto max-w-screen-2xl md:grid md:grid-cols-2 sm:py-32 lg:px-6">
+          <div className="items-center gap-8 px-4 mx-auto py-14 max-w-screen-2xl md:grid md:grid-cols-2 sm:py-32 lg:px-6">
             <div className="self-start">
               <h2 className="mb-4 md:mb-6 text-3xl md:text-5xl w-72 md:max-w-sm tracking-widest md:tracking-normal leading-10 md:leading-[48px] font-extrabold text-success-800 dark:text-white">
                 Become a Sponsor
               </h2>
-              <p className="mb-6 max-w-sm font-light text-gray-500 md:leading-7 md:text-xl text-base tracking-wide dark:text-gray-400">
+              <p className="max-w-sm mb-6 text-base font-light tracking-wide text-gray-500 md:leading-7 md:text-xl dark:text-gray-400">
                 Help us make this camp a memorable one for thousands of Muslims
                 students’ in Lagos
               </p>
               <Link
                 href="#"
-                className="inline-flex items-center text-success-500 focus:ring-4 leading-5 focus:ring-primary-300 font-bold underline rounded-lg text-sm md:text-base dark:focus:ring-primary-900"
+                className="inline-flex items-center text-sm font-bold leading-5 underline rounded-lg text-success-500 focus:ring-4 focus:ring-primary-300 md:text-base dark:focus:ring-primary-900"
               >
                 Contact us
                 <svg
-                  className="ml-2 -mr-1 w-5 h-5"
+                  className="w-5 h-5 ml-2 -mr-1"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -732,23 +736,23 @@ export default function HomePage() {
                     className="w-40 h-28 md:w-56 md:h-40"
                   />
                 </div>
-                <div className="w-40 h-28 md:w-56 md:h-40 border border-black rounded-lg"></div>
-                <div className="w-40 h-28 md:w-56 md:h-40 border border-black rounded-lg"></div>
-                <div className="w-40 h-28 md:w-56 md:h-40 border border-black rounded-lg"></div>
-                <div className="w-40 h-28 md:w-56 md:h-40 border border-black rounded-lg"></div>
-                <div className="w-40 h-28 md:w-56 md:h-40 border border-black rounded-lg"></div>
-                <div className="hidden md:block w-40 h-28 md:w-56 md:h-40 border border-black rounded-lg"></div>
-                <div className="hidden md:block w-40 h-28 md:w-56 md:h-40 border border-black rounded-lg"></div>
-                <div className="hidden md:block w-40 h-28 md:w-56 md:h-40 border border-black rounded-lg"></div>
+                <div className="w-40 border border-black rounded-lg h-28 md:w-56 md:h-40"></div>
+                <div className="w-40 border border-black rounded-lg h-28 md:w-56 md:h-40"></div>
+                <div className="w-40 border border-black rounded-lg h-28 md:w-56 md:h-40"></div>
+                <div className="w-40 border border-black rounded-lg h-28 md:w-56 md:h-40"></div>
+                <div className="w-40 border border-black rounded-lg h-28 md:w-56 md:h-40"></div>
+                <div className="hidden w-40 border border-black rounded-lg md:block h-28 md:w-56 md:h-40"></div>
+                <div className="hidden w-40 border border-black rounded-lg md:block h-28 md:w-56 md:h-40"></div>
+                <div className="hidden w-40 border border-black rounded-lg md:block h-28 md:w-56 md:h-40"></div>
               </div>
             </div>
           </div>
         </section>
 
         <footer className="p-4 pb-24 bg-[#0D5239] sm:p-6 dark:bg-gray-800">
-          <div className="mx-auto pt-4 md:pt-8 max-w-screen-2xl">
+          <div className="pt-4 mx-auto md:pt-8 max-w-screen-2xl">
             <div className="md:flex md:justify-between">
-              <div className="mb-16 mt-6 md:mt-0 md:mb-0">
+              <div className="mt-6 mb-16 md:mt-0 md:mb-0">
                 <div className="flex items-center">
                   <div className="">
                     <Link href="/">
@@ -758,11 +762,11 @@ export default function HomePage() {
                             src={AppLogo}
                             sizes="100vw"
                             alt="Application Logo"
-                            className="md:w-24 md:h-20 w-20 h-16"
+                            className="w-20 h-16 md:w-24 md:h-20"
                           />
                         </div>
-                        <div className="text-lg md:text-xl w-10 font-bold">
-                          <span className="text-white block m-0 p-0 leading-4 md:leading-5">
+                        <div className="w-10 text-lg font-bold md:text-xl">
+                          <span className="block p-0 m-0 leading-4 text-white md:leading-5">
                             113th
                           </span>
                           <span className="text-[#E5FF2D] block m-0 p-0 leading-4 md:leading-5">
@@ -782,13 +786,13 @@ export default function HomePage() {
                   <div className="">
                     <div className="flex items-center space-x-3">
                       <div className="w-20 text-end">
-                        <span className="text-white text-xl md:text-2xl tracking-widest font-bold block m-0 p-0 leading-4 md:leading-5">
+                        <span className="block p-0 m-0 text-xl font-bold leading-4 tracking-widest text-white md:text-2xl md:leading-5">
                           MSSN
                         </span>
-                        <span className="text-white font-semibold text-xs md:text-sm block m-0 p-0 leading-4 md:leading-5">
+                        <span className="block p-0 m-0 text-xs font-semibold leading-4 text-white md:text-sm md:leading-5">
                           Lagos State
                         </span>
-                        <span className="text-white font-semibold text-xs md:text-sm block m-0 p-0 leading-4 md:leading-5">
+                        <span className="block p-0 m-0 text-xs font-semibold leading-4 text-white md:text-sm md:leading-5">
                           Area Unit
                         </span>
                       </div>
@@ -902,7 +906,7 @@ export default function HomePage() {
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-between">
-              <span className="text-base font-normal md:leading-7 md:tracking-widest text-white sm:text-center dark:text-gray-400">
+              <span className="text-base font-normal text-white md:leading-7 md:tracking-widest sm:text-center dark:text-gray-400">
                 © Copyright. All Rights Reserved IVC 2023
               </span>
               <div className="flex mt-10 space-x-6 sm:justify-center sm:mt-0">
