@@ -375,10 +375,10 @@ export default function HomePage() {
                 <div className="flex items-center space-x-8 mr-10">
                   <div className="">
                     <div className="relative">
-                      <div className="w-56 h-48 md:w-[400px] md:h-[340px] bg-[url('./images/speaker1.jpeg')] rounded-xl bg-center bg-[#C4C4C4]/50 mix-blend-luminosity bg-no-repeat bg-cover"></div>
+                      <div className="w-56 h-48 md:w-[400px] md:h-[340px] bg-[url('./images/male.png')] rounded-xl bg-center bg-[#C4C4C4]/50 mix-blend-luminosity bg-no-repeat bg-cover"></div>
                       <div className="absolute md:left-6 md:top-6 top-2 left-2 text-center py-2 md:px-8 px-6 bg-[#E5FF2D] rounded-full">
                         <p className="text-sm leading-4 md:text-base md:leading-6 font-semibold tracking-normal">
-                          TECH
+                          USTADH
                         </p>
                       </div>
                       <div className="md:mt-5 mt-3">
@@ -386,20 +386,20 @@ export default function HomePage() {
                           Speaker
                         </p>
                         <h4 className="md:text-4xl text-2xl leading-8 font-normal tracking-normal md:mb-2">
-                          Samson Goddy
+                          Mallam
                         </h4>
                         <p className="md:text-lg text-sm font-normal md:leading-8 tracking-wide">
-                          Accessibility in Design - A handmaid’s tale
+                          Mallam
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="">
                     <div className="relative">
-                      <div className="w-56 h-48 md:w-[400px] md:h-[340px] bg-[url('./images/speaker2.jpeg')] rounded-xl bg-center bg-[#C4C4C4]/50 mix-blend-luminosity bg-no-repeat bg-cover"></div>
+                      <div className="w-56 h-48 md:w-[400px] md:h-[340px] bg-[url('./images/female.png')] rounded-xl bg-center bg-[#C4C4C4]/50 mix-blend-luminosity bg-no-repeat bg-cover"></div>
                       <div className="absolute md:left-6 md:top-6 top-2 left-2 text-center py-2 md:px-8 px-6 bg-success-500 rounded-full">
                         <p className="text-sm md:text-base md:leading-6 font-semibold md:tracking-normal">
-                          INFLUENCER
+                          IMAM
                         </p>
                       </div>
                       <div className="md:mt-5 mt-3">
@@ -407,20 +407,20 @@ export default function HomePage() {
                           Speaker
                         </p>
                         <h4 className="md:text-4xl text-2xl leading-8 font-normal tracking-normal md:mb-2">
-                          Mr. Heelariouz
+                          Mallam
                         </h4>
                         <p className="md:text-lg text-sm font-normal md:leading-8 tracking-wide">
-                          Accessibility in Design - A handmaid’s tale
+                          Scholar
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="">
                     <div className="relative">
-                      <div className="w-56 h-48 md:w-[400px] md:h-[340px] bg-[url('./images/speaker3.jpeg')] rounded-xl bg-center bg-[#C4C4C4]/50 mix-blend-luminosity bg-no-repeat bg-cover"></div>
+                      <div className="w-56 h-48 md:w-[400px] md:h-[340px] bg-[url('./images/Asset-24x.png')] rounded-xl bg-center bg-[#C4C4C4]/50 mix-blend-luminosity bg-no-repeat bg-cover"></div>
                       <div className="absolute md:left-6 md:top-6 top-2 left-2 text-center py-2 md:px-8 px-6 bg-[#E5FF2D] rounded-full">
                         <p className="text-sm md:text-base md:leading-6 font-semibold md:tracking-normal">
-                          TECH
+                          USTADH
                         </p>
                       </div>
                       <div className="md:mt-5 mt-3">
@@ -428,20 +428,20 @@ export default function HomePage() {
                           Speaker
                         </p>
                         <h4 className="md:text-4xl text-2xl leading-8 font-normal tracking-normal md:mb-2">
-                          Dynasty
+                          Mallam
                         </h4>
                         <p className="md:text-lg text-sm font-normal md:leading-8 tracking-wide">
-                          Accessibility in Design - A handmaid’s tale
+                          Marital
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="">
                     <div className="relative">
-                      <div className="w-56 h-48 md:w-[400px] md:h-[340px] bg-[url('./images/speaker2.jpeg')] rounded-xl bg-center bg-[#C4C4C4]/50 mix-blend-luminosity bg-no-repeat bg-cover"></div>
+                      <div className="w-56 h-48 md:w-[400px] md:h-[340px] bg-[url('./images/Asset-24x.png')] rounded-xl bg-center bg-[#C4C4C4]/50 mix-blend-luminosity bg-no-repeat bg-cover"></div>
                       <div className="absolute md:left-6 md:top-6 top-2 left-2 text-center py-2 md:px-8 px-6 bg-success-500 rounded-full">
                         <p className="text-sm md:text-base md:leading-6 font-semibold md:tracking-normal">
-                          INFLUENCER
+                          USTADH
                         </p>
                       </div>
                       <div className="md:mt-5 mt-3">
@@ -449,10 +449,10 @@ export default function HomePage() {
                           Speaker
                         </p>
                         <h4 className="md:text-4xl text-2xl leading-8 font-normal tracking-normal md:mb-2">
-                          Mr. Heelariouz
+                          Mallam
                         </h4>
                         <p className="md:text-lg text-sm font-normal md:leading-8 tracking-wide">
-                          Accessibility in Design - A handmaid’s tale
+                          Scholar
                         </p>
                       </div>
                     </div>
