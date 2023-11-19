@@ -135,7 +135,7 @@ export default function HomePage() {
                     >
                       <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border md:items-center border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-12 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                          <Link href="#">
+                          <Link href="https://camp.mssnlagos.net">
                             <div className="text-xl md:text-2xl text-success-800 font-bold leading-8 tracking-normal">
                               <span className="">New User?</span>
                               <span className="ml-2 underline">Register</span>
@@ -143,12 +143,14 @@ export default function HomePage() {
                           </Link>
                         </li>
                         <li>
+                          <Link href="https://camp.mssnlagos.net/existingmember">
                           <button
                             type="button"
                             className="text-white bg-primary hover:bg-success-700 cursor-pointer focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-xl md:text-2xl px-8 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
                           >
                             Existing Users
                           </button>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -326,14 +328,14 @@ export default function HomePage() {
                         <div className="">
                           <div className="uppercase bg-[#E5FF2D] px-6 rounded-full max-w-max text-xs leading-6 md:text-lg tracking-wider md:tracking-widest py-1">
                             <span className="font-medium">About</span>{" "}
-                            <span className="font-bold">133th ivc</span>
+                            <span className="font-bold">113th ivc</span>
                           </div>
                         </div>
                         <div className="mt-3">
                           <p className="text-base md:text-xl font-normal leading-6 md:leading-8 tracking-normal">
-                            Lorem ipsum is placeholder text commonly used in the
-                            graphic, print, and publishing industries for
-                            previewing layouts and visual mockups.
+                            MSSNLagos State Area Unit presents her annual Islamic Vacation Course (IVC) for youths.
+                            The 113th edition event holds this
+                            <span className="font-extrabold text-success-700 dark:text-white"> December at EPE, Naforija. </span>
                           </p>
                         </div>
                       </div>
@@ -348,16 +350,14 @@ export default function HomePage() {
         <section className="bg-white dark:bg-gray-900 mt-28 pt-16">
           <div className="pt-24 pb-16 px-4 mx-auto max-w-screen-2xl sm:pt-32 sm:pb-24 lg:px-6">
             <div className="max-w-screen-md">
-              <h2 className="md:mb-6 mb-4 md:text-5xl text-3xl max-w-lg md:tracking-wider md:leading-10 font-extrabold text-success-700 dark:text-white">
+              <h2 className="md:mb-6 mb-4 md:text-5xl text-3xl max-w-lg md:tracking-wider md:leading-10 font-extrabold text-success-700 dark:text-white mt-10 mt-md-0">
                 Some speakers you would see
               </h2>
             </div>
             <div className="w-full flex flex-col md:flex-row space-y-6 md:space-y-0 md:justify-between md:items-center">
               <div className="">
                 <p className="max-w-xl md:text-xl md:tracking-normal md:leading-7 font-normal">
-                  Lorem ipsum is placeholder text commonly used in the graphic,
-                  print, and publishing industries for previewing layouts and
-                  visual mockups.
+                 Some of our amazing speakers that will be around.
                 </p>
               </div>
               <div className="">
@@ -480,7 +480,7 @@ export default function HomePage() {
                 institution,...
               </p>
               <Link
-                href="#"
+                href="https://mssnlagos.net"
                 className="inline-flex items-center text-success-500 focus:ring-4 leading-5 focus:ring-primary-300 font-bold underline rounded-lg text-sm md:text-base dark:focus:ring-primary-900"
               >
                 Learn more
@@ -907,7 +907,7 @@ export default function HomePage() {
               </span>
               <div className="flex mt-10 space-x-6 sm:justify-center sm:mt-0">
                 <Link
-                  href="#"
+                  href="https://instagram.com/mssnlagos"
                   className="text-white hover:text-gray-900 dark:hover:text-white"
                 >
                   <svg
@@ -924,7 +924,7 @@ export default function HomePage() {
                   </svg>
                 </Link>
                 <Link
-                  href="#"
+                  href="https://www.linkedin.com/company/mssnlagos"
                   className="text-white hover:text-gray-900 dark:hover:text-white"
                 >
                   <svg
@@ -942,7 +942,7 @@ export default function HomePage() {
                   </svg>
                 </Link>
                 <Link
-                  href="#"
+                  href="https://twitter.com/mssnlagos"
                   className="text-white hover:text-gray-900 dark:hover:text-white"
                 >
                   <svg
